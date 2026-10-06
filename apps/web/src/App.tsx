@@ -6,13 +6,10 @@ import { PortfolioSummary } from './components/PortfolioSummary';
 import { TransactionList } from './components/TransactionList';
 
 function App() {
-  const handleConnectWallet = () => {
-    console.log('Connect wallet clicked');
-  };
 
   return (
     <div className="app">
-      <Header onConnect={handleConnectWallet} />
+      <Header />
 
       <main className="main">
         <ApiStatus />
